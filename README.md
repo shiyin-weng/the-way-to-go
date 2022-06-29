@@ -20,3 +20,5 @@
   - new vs make
 	- new(T) assign memory, ptr:nil, len:0, cap:0, return pointer
 	- make(T) ptr:[0]int, len:0, cap:0, return value
+  - insert item into slice: tricky in golang // empty slice or out of range case
+	- reference: /demo/slice.go
