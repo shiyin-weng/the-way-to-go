@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // common usage
 // open a file
@@ -17,7 +20,13 @@ import "fmt"
 
 func main() {
 	//a()
-	f()
+	//f()
+	fmt.Println(f1())
+
+	start := time.Now()
+	time.Sleep(time.Second)
+	end := time.Now()
+	fmt.Println(end.Sub(start))
 }
 
 func a() {
@@ -31,4 +40,11 @@ func f() {
 	for i := 0; i < 5; i++ {
 		defer fmt.Println(i)
 	}
+}
+
+func f1() (ret int) {
+	defer func() {
+		ret++
+	}()
+	return 1
 }
