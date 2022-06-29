@@ -8,3 +8,9 @@
 
 
 ## Notes
+
+- chapter 6: function
+  - defer: function or not, implementation: close file, unlock mutual locker...
+  - function: closure
+
+- chapter 7: array and slice
