@@ -14,3 +14,9 @@
   - function: closure
 
 - chapter 7: array and slice
+  - concepts of array and slice
+  	- array: [5]int{1, 2, 3, 4, 5} or [5]int{1, 2} // Fixed length, can not use append(); pass copy as function input
+  	- slice: arr := make([]int, 10) // dynamic length, pass reference as function input
+  - new vs make
+	- new(T) assign memory, ptr:nil, len:0, cap:0, return pointer
+	- make(T) ptr:[0]int, len:0, cap:0, return value

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-var term = 15
+var term = 1
 
 func main() {
 	result := fibarray(term)
@@ -12,6 +12,10 @@ func main() {
 }
 
 func fibarray(term int) []int {
+	if term == 1 {
+		return []int{1}
+	}
+
 	farr := make([]int, term)
 	farr[0], farr[1] = 1, 1
 
