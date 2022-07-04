@@ -22,3 +22,10 @@
 	- make(T) ptr:[0]int, len:0, cap:0, return value
   - insert item into slice: tricky in golang // empty slice or out of range case
 	- reference: /demo/slice.go
+
+- chapter 8: map // dict in Python, hash or HashTable
+  - define:
+  	- var mp map[string]int
+  	- mp := make(map[string]int)
+
+
